@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
+        android:layout_width="300dp"
+        android:layout_height="82dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+	    <RelativeLayout
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:clickable="true"
+	        android:id="@+id/data"
+	        android:layout_width="257dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	    	android:background="@drawable/myshape">
+	    	
+	
+		     <RelativeLayout
+		        xmlns:android="http://schemas.android.com/apk/res/android"
+		        android:id="@+id/textdata"
+	         	android:layout_width="217dp"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="vertical"
+		    	android:paddingTop="4dp"
+		    	android:paddingBottom="4dp"
+		    	android:paddingLeft="8dp"
+		    	android:paddingRight="8dp">
+			    	
+			        <TextView
+			            android:id="@+id/rep_name"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentTop="true"
+			            android:textColor="#37FDFC"
+			            android:textSize="14sp"
+			            android:textStyle="bold" />
+			            
+	                <TextView
+			            android:id="@+id/update_time"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="#FFFFFF"
+			            android:textSize="11sp" 
+			            android:textStyle="normal" 
+						android:layout_alignParentRight="true"
+			            />
+			
+			        <TextView
+			            android:id="@+id/commit_author"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:singleLine="true"
+			            android:textColor="#FFFFFF"
+			            android:textSize="13sp" 
+			            android:textStyle="normal" 
+			            android:layout_below="@+id/rep_name"
+						android:layout_alignLeft="@+id/rep_name"
+			            />
+			        
+			        <TextView
+			            android:id="@+id/message"
+			            android:textColor="#FFFFFF"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_alignLeft="@+id/rep_name"
+			            android:layout_below="@id/commit_author"
+			            android:textSize="13sp"
+			            android:textStyle="normal"  />
+		       </RelativeLayout>     	
+	
+	        <ImageButton
+	            android:id="@+id/view"
+               	android:layout_toRightOf="@+id/textdata"
+	            android:layout_width="40dp"
+	            android:layout_height="fill_parent"
+	            android:layout_alignParentTop="true"
+	            android:background="@drawable/changesarea"
+	            android:src="@drawable/magnifyingglass">
+	
+			</ImageButton>
+     </RelativeLayout>
+        
+       	<ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+           	android:layout_alignParentRight="true"
+            android:background="@drawable/refresharea"
+            android:src="@drawable/refresh">
+		</ImageButton>
+		
+
+</RelativeLayout>

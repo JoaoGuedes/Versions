@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference android:enabled="true" android:summary="Enables automatic refresh of all repository's latest commit. This will drain your battery faster!" android:title="Auto-Refresh" android:selectable="true" android:key="pref_autorefresh"/>
+    <ListPreference android:title="Refresh rate" android:summary="Low values will drain battery quicker." android:dependency="pref_autorefresh" android:dialogTitle="Refresh rate" android:entries="@array/times" android:entryValues="@array/refreshvalues" android:key="pref_refreshrate"/>    
+</PreferenceScreen>
